@@ -1,11 +1,13 @@
 .container {
   width: 100vw;
 
+  padding-left: 50px;
+  padding-right: 50px;
   display: flex;
-  flex-direction: column;
-  justify-content: center;
+  flex-direction: row;
+  justify-content: space-between;
   align-items: center;
-  margin-top: 100px;
+  margin-top: 220px;
   position: relative;
   z-index: +5556;
 }
@@ -33,7 +35,8 @@
 .fileinput {
   display: none;
 }
-.inputbtn {
+.inputbtn,
+.convert {
   background-color: rgb(30, 78, 8);
   width: 60%;
   height: 40px;
@@ -44,6 +47,41 @@
 }
 .title {
   margin-left: 10px;
-  font-size: 0.6em;
+  font-size: 0.7em;
   margin: 0;
+}
+
+.video {
+  width: 250px;
+  height: 150px;
+}
+.select {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+}
+.select p {
+  margin-left: 10px;
+}
+#codec {
+  text-transform: uppercase;
+  background-color: rgb(42, 94, 42);
+  border: none;
+  color: rgb(255, 255, 255);
+  width: 150px;
+  height: 30px;
+  border-radius: 15px;
+}
+#codec:focus {
+  outline: none;
+}
+#codec option {
+  color: rgb(255, 249, 249);
+}
+#codec option:hover {
+  background-color: white;
+}
+.convert {
+  margin-top: 15px;
+  margin-left: 25px;
 }
